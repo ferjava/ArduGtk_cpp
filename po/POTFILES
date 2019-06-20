@@ -1,0 +1,4 @@
+data/fjv.Ejercicios.ArduBoton.desktop.in
+data/fjv.Ejercicios.ArduBoton.appdata.xml.in
+data/fjv.Ejercicios.ArduBoton.gschema.xml
+src/arduboton-window.ui
