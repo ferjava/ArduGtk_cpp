@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Arduino_pratica"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.linux": {
+			"PATH": "/home/ferjava/.platformio/penv/bin:/home/ferjava/.platformio/penv:/home/ferjava/.cargo/bin:/home/ferjava/WorkSpace-Coco2dx/Cocos2d-x/cocos2d-x/templates:/home/ferjava/WorkSpace-Coco2dx/Cocos2d-x:/home/ferjava/WorkSpace-Coco2dx/Cocos2d-x/cocos2d-x/tools/cocos2d-console/bin:/home/ferjava/.local/bin:/home/ferjava/bin:/home/ferjava/.cargo/bin:/home/ferjava/WorkSpace-Coco2dx/Cocos2d-x/cocos2d-x/templates:/home/ferjava/WorkSpace-Coco2dx/Cocos2d-x:/home/ferjava/WorkSpace-Coco2dx/Cocos2d-x/cocos2d-x/tools/cocos2d-console/bin:/home/ferjava/.local/bin:/home/ferjava/bin:/usr/share/Modules/bin:/home/ferjava/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ferjava/.dotnet/tools:/home/ferjava/.local/bin:/home/ferjava/.local/bin:/home/ferjava/.dotnet/tools:/home/ferjava/.local/bin:/home/ferjava/.local/bin",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}
