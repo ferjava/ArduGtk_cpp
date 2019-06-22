@@ -33,3 +33,5 @@
 1905	2226	582921184	src/arduboton.exe	8e2dbf0eaf22151
 11	1970	582921603	src/25a6634@@arduboton@exe/arduboton-window.cpp.obj	46ad1485a8c819bb
 1972	2306	582921603	src/arduboton.exe	8e2dbf0eaf22151
+0	266	0	meson-clean-ctlist	65e05a3db1424ab9
+266	318	0	meson-clean	6371031543ad1b60
