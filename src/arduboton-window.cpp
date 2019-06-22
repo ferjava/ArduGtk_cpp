@@ -27,6 +27,11 @@
 #include "libserialport.h"
 #include <string>
 #include <cstring>
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
 ArdubotonWindow::ArdubotonWindow()
 	: Glib::ObjectBase("ArdubotonWindow")
 	, Gtk::Window()
@@ -61,7 +66,7 @@ ArdubotonWindow::ArdubotonWindow()
     {
 
     }
-
+    char  entrada[20] ="";
     char High[1] = {'H'};//Caracter del arduino que enciende el led
     char Low[1] = {'L'};//Caracter del arduino  que apaga  el led
     if(pulsado==true)
@@ -69,6 +74,8 @@ ArdubotonWindow::ArdubotonWindow()
     //porniendo el caracter en el arduino
     boton->set_label("OFF");
     sp_nonblocking_write(serialport, High ,1);
+    sp_nonblocking_read(serialport,entrada,20);
+    printf("Salida de la cadena :'%s'\n",entrada);
     pulsado = false;
     }
     else if(pulsado == false )
@@ -76,6 +83,8 @@ ArdubotonWindow::ArdubotonWindow()
     //poniendo el caracter en arduino
     boton->set_label("ON");
     sp_nonblocking_write(serialport,Low,1);
+    sp_nonblocking_read(serialport,entrada,20);
+    printf("Salida de la cadena :'%s'\n",entrada);
     pulsado = true;
     }
 }
@@ -94,7 +103,7 @@ void ArdubotonWindow::on_boton_conecta_clicked()
      strcpy(_puerto,puerto.c_str());       
      //Creando la conexion
      sp_get_port_by_name(_puerto, &serialport); //TODO: Cambios en windows /dev/ttyACM0 por COM3
-     sp_open(serialport, SP_MODE_WRITE);
+     sp_open(serialport, SP_MODE_READ_WRITE);
      //TODO:
      // Abrir el puerto antes de configurarlo
 
@@ -103,3 +112,4 @@ void ArdubotonWindow::on_boton_conecta_clicked()
      sp_set_parity(serialport, SP_PARITY_NONE);
      sp_set_stopbits(serialport, 1);
 }
+ 

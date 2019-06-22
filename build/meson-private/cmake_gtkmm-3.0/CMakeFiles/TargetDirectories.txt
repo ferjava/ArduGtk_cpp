@@ -1,2 +1,0 @@
-/home/ferjava/Proyectos/ArduBoton/build/meson-private/cmake_gtkmm-3.0/CMakeFiles/rebuild_cache.dir
-/home/ferjava/Proyectos/ArduBoton/build/meson-private/cmake_gtkmm-3.0/CMakeFiles/edit_cache.dir

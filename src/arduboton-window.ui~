@@ -7,7 +7,7 @@
     <property name="can_focus">False</property>
     <child>
       <object class="GtkButton" id="boton">
-        <property name="label" translatable="yes">button</property>
+        <property name="label" translatable="yes">On/Off</property>
         <property name="name">boton</property>
         <property name="width_request">150</property>
         <property name="height_request">25</property>
@@ -37,7 +37,7 @@
       <object class="GtkButton" id="_Boton_Conecta">
         <property name="label" translatable="yes">Conecta
 </property>
-        <property name="width_request">-1</property>
+        <property name="width_request">20</property>
         <property name="height_request">18</property>
         <property name="visible">True</property>
         <property name="can_focus">True</property>
