@@ -25,37 +25,33 @@
 #include "arduboton-window.h"
 #include <gtkmm/messagedialog.h>
 #include "libserialport.h"
-
+#include <string>
+#include <cstring>
 ArdubotonWindow::ArdubotonWindow()
 	: Glib::ObjectBase("ArdubotonWindow")
 	, Gtk::Window()
 	, headerbar(nullptr)
-	, label(nullptr)
+	, entry(nullptr)
 	, boton(nullptr)
+    , boton_conectar(nullptr)
 	, fixed(nullptr)
 {
-	 //Creando la conexion
-     sp_get_port_by_name("COM3", &serialport);//TODO: Cambios en windows /dev/ttyACM0 por COM3
-     sp_open(serialport, SP_MODE_WRITE);
-       //TODO:
-       // Abrir el puerto antes de configurarlo
-        
-     sp_set_baudrate(serialport, 9600);
-     sp_set_bits(serialport,8);
-     sp_set_parity(serialport,SP_PARITY_NONE);
-     sp_set_stopbits(serialport,1);
+	
    
      //Crea desde el archivo builder
      builder = Gtk::Builder::create_from_resource("/fjv/Ejercicios/ArduBoton/arduboton-window.ui");
      builder->get_widget("headerbar", headerbar);
-     builder->get_widget("label", label);
+     builder->get_widget("_Puerto_Entry", entry);
      builder->get_widget("Fixed1", fixed);
      builder->get_widget("boton", boton);
+     builder->get_widget("_Boton_Conecta", boton_conectar);
      add(*fixed);
      fixed->show_all();
      set_titlebar(*headerbar);
      headerbar->show();
      boton->signal_clicked().connect(sigc::mem_fun(*this, &ArdubotonWindow::on_boton_pressed));
+     boton_conectar->signal_clicked().connect(sigc::mem_fun(*this,&ArdubotonWindow::on_boton_conecta_clicked));
+
 	}
 	void ArdubotonWindow::on_boton_pressed()
 {
@@ -86,6 +82,24 @@ ArdubotonWindow::ArdubotonWindow()
     ArdubotonWindow::~ArdubotonWindow()
     {
         fixed->remove(*boton);
-        fixed->remove(*label);
+        fixed->remove(*entry);
+        fixed->remove(*boton_conectar);
         sp_close(serialport);
     }
+void ArdubotonWindow::on_boton_conecta_clicked()
+{
+     //Convertimos la string para char 
+     std::string puerto = entry->get_text();
+     char *_puerto = new char [puerto.length()+1];
+     strcpy(_puerto,puerto.c_str());       
+     //Creando la conexion
+     sp_get_port_by_name(_puerto, &serialport); //TODO: Cambios en windows /dev/ttyACM0 por COM3
+     sp_open(serialport, SP_MODE_WRITE);
+     //TODO:
+     // Abrir el puerto antes de configurarlo
+
+     sp_set_baudrate(serialport, 9600);
+     sp_set_bits(serialport, 8);
+     sp_set_parity(serialport, SP_PARITY_NONE);
+     sp_set_stopbits(serialport, 1);
+}

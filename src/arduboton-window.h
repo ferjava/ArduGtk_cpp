@@ -20,7 +20,7 @@
 
 #include <gtkmm/builder.h>
 #include <gtkmm/headerbar.h>
-#include <gtkmm/label.h>
+#include <gtkmm/entry.h>
 #include <gtkmm/window.h>
 #include <gtkmm/fixed.h>
 #include <gtkmm/button.h>
@@ -33,10 +33,11 @@ public:
 	ArdubotonWindow();
  virtual ~ArdubotonWindow();
   void on_boton_pressed();
+  void on_boton_conecta_clicked();    
 private:
 	Gtk::HeaderBar *headerbar;
-	Gtk::Label  *label;
-  Gtk::Button *boton;
+	Gtk::Entry  *entry;
+  Gtk::Button *boton , *boton_conectar;
   Gtk::Fixed  *fixed;
 	Glib::RefPtr<Gtk::Builder> builder;
 

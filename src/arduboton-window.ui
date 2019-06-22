@@ -6,22 +6,6 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <child>
-      <object class="GtkLabel" id="label">
-        <property name="width_request">100</property>
-        <property name="height_request">80</property>
-        <property name="can_focus">False</property>
-        <property name="label">Hello, World!</property>
-        <attributes>
-          <attribute name="weight" value="bold"/>
-          <attribute name="scale" value="2"/>
-        </attributes>
-      </object>
-      <packing>
-        <property name="x">237</property>
-        <property name="y">81</property>
-      </packing>
-    </child>
-    <child>
       <object class="GtkButton" id="boton">
         <property name="label" translatable="yes">button</property>
         <property name="name">boton</property>
@@ -36,10 +20,38 @@
         <property name="y">247</property>
       </packing>
     </child>
+    <child>
+      <object class="GtkEntry" id="_Puerto_Entry">
+        <property name="width_request">50</property>
+        <property name="height_request">18</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="max_width_chars">12</property>
+      </object>
+      <packing>
+        <property name="x">100</property>
+        <property name="y">50</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="_Boton_Conecta">
+        <property name="label" translatable="yes">Conecta
+</property>
+        <property name="width_request">-1</property>
+        <property name="height_request">18</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+      </object>
+      <packing>
+        <property name="x">340</property>
+        <property name="y">50</property>
+      </packing>
+    </child>
   </object>
   <object class="GtkHeaderBar" id="headerbar">
     <property name="can_focus">False</property>
-    <property name="title">Hello, World!</property>
+    <property name="title">ArduGtkApp</property>
     <property name="show_close_button">True</property>
   </object>
 </interface>
