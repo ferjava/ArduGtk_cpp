@@ -35,22 +35,27 @@ ArdubotonWindow::ArdubotonWindow()
 	, fixed(nullptr)
 {
 	 //Creando la conexion
-     sp_get_port_by_name("/dev/ttyACM0", &serialport);
-     sp_set_baudrate(serialport,9600);
-     sp_open(serialport,SP_MODE_WRITE);
-
-
-    //Crea desde el archivo builder
-	builder = Gtk::Builder::create_from_resource("/fjv/Ejercicios/ArduBoton/arduboton-window.ui");
-	builder->get_widget("headerbar", headerbar);
-	builder->get_widget("label", label);
-	builder->get_widget("Fixed1",fixed);
-	builder->get_widget("boton" ,boton);
-	add(*fixed);
-	fixed->show_all();
-	set_titlebar(*headerbar);
-	headerbar->show();
-	boton->signal_clicked().connect(sigc::mem_fun(*this,&ArdubotonWindow::on_boton_pressed));
+     sp_get_port_by_name("COM3", &serialport);//TODO: Cambios en windows /dev/ttyACM0 por COM3
+     sp_open(serialport, SP_MODE_WRITE);
+       //TODO:
+       // Abrir el puerto antes de configurarlo
+        
+     sp_set_baudrate(serialport, 9600);
+     sp_set_bits(serialport,8);
+     sp_set_parity(serialport,SP_PARITY_NONE);
+     sp_set_stopbits(serialport,1);
+   
+     //Crea desde el archivo builder
+     builder = Gtk::Builder::create_from_resource("/fjv/Ejercicios/ArduBoton/arduboton-window.ui");
+     builder->get_widget("headerbar", headerbar);
+     builder->get_widget("label", label);
+     builder->get_widget("Fixed1", fixed);
+     builder->get_widget("boton", boton);
+     add(*fixed);
+     fixed->show_all();
+     set_titlebar(*headerbar);
+     headerbar->show();
+     boton->signal_clicked().connect(sigc::mem_fun(*this, &ArdubotonWindow::on_boton_pressed));
 	}
 	void ArdubotonWindow::on_boton_pressed()
 {

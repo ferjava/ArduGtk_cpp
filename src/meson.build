@@ -17,7 +17,6 @@ arduboton_sources += gnome.compile_resources('arduboton-resources',
 )
 
 executable('arduboton', arduboton_sources,
-  dependencies: arduboton_deps,
-  link_args : '-Wl,-lserial',
+  dependencies: arduboton_deps, 
   install: true,
 )

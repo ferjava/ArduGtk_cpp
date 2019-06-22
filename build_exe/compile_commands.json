@@ -1,0 +1,17 @@
+[
+  {
+    "directory": "C:\\Users\\fgsj\\WorkSpace\\GtkArduino_cpp\\ArduGtk_cpp\\build_exe",
+    "command": "cc @src/25a6634@@arduboton@exe/meson-generated_.._arduboton-resources.c.obj.rsp",
+    "file": "src/arduboton-resources.c"
+  },
+  {
+    "directory": "C:\\Users\\fgsj\\WorkSpace\\GtkArduino_cpp\\ArduGtk_cpp\\build_exe",
+    "command": "c++ @src/25a6634@@arduboton@exe/main.cpp.obj.rsp",
+    "file": "../src/main.cpp"
+  },
+  {
+    "directory": "C:\\Users\\fgsj\\WorkSpace\\GtkArduino_cpp\\ArduGtk_cpp\\build_exe",
+    "command": "c++ @src/25a6634@@arduboton@exe/arduboton-window.cpp.obj.rsp",
+    "file": "../src/arduboton-window.cpp"
+  }
+]

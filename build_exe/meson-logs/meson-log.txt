@@ -1,0 +1,124 @@
+Build started at 2019-06-22T10:21:16.661755
+Main binary: C:\Program Files\Meson\meson.exe
+Python system: Windows
+The Meson build system
+Version: 0.50.1
+Source dir: C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp
+Build dir: C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe
+Build type: native build
+Project name: arduboton
+Project version: 0.1.0
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe\meson-private\sanitycheckc.c -o C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe\meson-private\sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe\meson-private\sanitycheckc.exe
+Native C compiler: cc (gcc 9.1.0 "cc (Rev2, Built by MSYS2 project) 9.1.0")
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe\meson-private\sanitycheckcpp.cc -o C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe\meson-private\sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Users\fgsj\WorkSpace\GtkArduino_cpp\ArduGtk_cpp\build_exe\meson-private\sanitycheckcpp.exe
+Native C++ compiler: c++ (gcc 9.1.0 "c++ (Rev2, Built by MSYS2 project) 9.1.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program desktop-file-validate found: NO
+Program appstream-util found: NO
+Program glib-compile-schemas found: YES (C:\msys64\mingw64\bin\glib-compile-schemas.EXE)
+Adding test "Validate schema file"
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['C:\\msys64\\mingw64\\bin\\pkg-config.EXE']
+Found pkg-config: C:\msys64\mingw64\bin\pkg-config.EXE (0.29.2)
+Determining dependency 'gtkmm-3.0' with pkg-config executable 'C:\\msys64\\mingw64\\bin\\pkg-config.EXE'
+Called `C:\msys64\mingw64\bin\pkg-config.EXE --modversion gtkmm-3.0` -> 0
+3.24.1
+Called `C:\msys64\mingw64\bin\pkg-config.EXE --cflags gtkmm-3.0` -> 0
+-mms-bitfields -pthread -mms-bitfields -IC:/msys64/mingw64/include/gtkmm-3.0 -IC:/msys64/mingw64/lib/gtkmm-3.0/include -IC:/msys64/mingw64/include/atkmm-1.6 -IC:/msys64/mingw64/include/gdkmm-3.0 -IC:/msys64/mingw64/lib/gdkmm-3.0/include -IC:/msys64/mingw64/include/giomm-2.4 -IC:/msys64/mingw64/lib/giomm-2.4/include -IC:/msys64/mingw64/include/pangomm-1.4 -IC:/msys64/mingw64/lib/pangomm-1.4/include -IC:/msys64/mingw64/include/glibmm-2.4 -IC:/msys64/mingw64/lib/glibmm-2.4/include -IC:/msys64/mingw64/include/gtk-3.0 -IC:/msys64/mingw64/include/cairo -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/pango-1.0 -IC:/msys64/mingw64/include/fribidi -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/atk-1.0 -IC:/msys64/mingw64/include/cairo -IC:/msys64/mingw64/include/cairomm-1.0 -IC:/msys64/mingw64/lib/cairomm-1.0/include -IC:/msys64/mingw64/include/cairo -IC:/msys64/mingw64/include/pixman-1 -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/freetype2 -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/harfbuzz -IC:/msys64/mingw64/include/libpng16 -IC:/msys64/mingw64/include/sigc++-2.0 -IC:/msys64/mingw64/lib/sigc++-2.0/include -IC:/msys64/mingw64/include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/include/libpng16 -IC:/msys64/mingw64/include -IC:/msys64/mingw64/lib/libffi-3.2.1/include -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -IC:/msys64/mingw64/include
+Called `C:\msys64\mingw64\bin\pkg-config.EXE gtkmm-3.0 --libs` -> 0
+-LC:/msys64/mingw64/lib -lgtkmm-3.0 -latkmm-1.6 -lgdkmm-3.0 -lgiomm-2.4 -lpangomm-1.4 -lglibmm-2.4 -lgtk-3 -lgdk-3 -lgdi32 -limm32 -lshell32 -lole32 -Wl,-luuid -lwinmm -ldwmapi -lsetupapi -lcfgmgr32 -lz -lpangowin32-1.0 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lgio-2.0 -lcairomm-1.0 -lcairo -lsigc-2.0 -lgdk_pixbuf-2.0 -lgobject-2.0 -lintl -lglib-2.0
+Called `C:\msys64\mingw64\bin\pkg-config.EXE gtkmm-3.0 --libs` -> 0
+-LC:/msys64/mingw64/lib -lgtkmm-3.0 -latkmm-1.6 -lgdkmm-3.0 -lgiomm-2.4 -lpangomm-1.4 -lglibmm-2.4 -lgtk-3 -lgdk-3 -lgdi32 -limm32 -lshell32 -lole32 -Wl,-luuid -lwinmm -ldwmapi -lsetupapi -lcfgmgr32 -lz -lpangowin32-1.0 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lgio-2.0 -lcairomm-1.0 -lcairo -lsigc-2.0 -lgdk_pixbuf-2.0 -lgobject-2.0 -lintl -lglib-2.0
+Running compile:
+Working directory:  C:\Users\fgsj\AppData\Local\Temp\tmpvztfd3_c
+Command line:  c++ C:\Users\fgsj\AppData\Local\Temp\tmpvztfd3_c\testfile.cpp -pipe -o C:\Users\fgsj\AppData\Local\Temp\tmpvztfd3_c\output.exe -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(int argc, char **argv) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  C:\Users\fgsj\AppData\Local\Temp\tmpmf785fpy
+Command line:  c++ C:\Users\fgsj\AppData\Local\Temp\tmpmf785fpy\testfile.cpp -pipe -c -o C:\Users\fgsj\AppData\Local\Temp\tmpmf785fpy\output.obj -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/
+programs: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/
+libraries: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/lib/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../lib/;C:/building/msys64/mingw64/x86_64-w64-mingw32/lib/x86_64-w64-mingw32/9.1.0/;C:/building/msys64/mingw64/x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../;C:/building/msys64/mingw64/x86_64-w64-mingw32/lib/
+
+Compiler stderr:
+ 
+Dependency gtkmm-3.0 found: YES 3.24.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libserialport' with pkg-config executable 'C:\\msys64\\mingw64\\bin\\pkg-config.EXE'
+Called `C:\msys64\mingw64\bin\pkg-config.EXE --modversion libserialport` -> 0
+0.1.1
+Called `C:\msys64\mingw64\bin\pkg-config.EXE --cflags libserialport` -> 0
+-IC:/msys64/mingw64/include
+Called `C:\msys64\mingw64\bin\pkg-config.EXE libserialport --libs` -> 0
+-LC:/msys64/mingw64/lib -lserialport
+Called `C:\msys64\mingw64\bin\pkg-config.EXE libserialport --libs` -> 0
+-LC:/msys64/mingw64/lib -lserialport
+Dependency libserialport found: YES 0.1.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'glib-2.0' with pkg-config executable 'C:\\msys64\\mingw64\\bin\\pkg-config.EXE'
+Called `C:\msys64\mingw64\bin\pkg-config.EXE --modversion glib-2.0` -> 0
+2.60.4
+Called `C:\msys64\mingw64\bin\pkg-config.EXE --cflags glib-2.0` -> 0
+-mms-bitfields -IC:/msys64/mingw64/include/glib-2.0 -IC:/msys64/mingw64/lib/glib-2.0/include -IC:/msys64/mingw64/include
+Called `C:\msys64\mingw64\bin\pkg-config.EXE glib-2.0 --libs` -> 0
+-LC:/msys64/mingw64/lib -lintl -lglib-2.0
+Called `C:\msys64\mingw64\bin\pkg-config.EXE glib-2.0 --libs` -> 0
+-LC:/msys64/mingw64/lib -lintl -lglib-2.0
+Build targets in project: 8
+Found ninja-1.8.2 at 'C:\Program Files\Meson\ninja.EXE'
+Running compile:
+Working directory:  C:\Users\fgsj\AppData\Local\Temp\tmp43hezr9g
+Command line:  cc C:\Users\fgsj\AppData\Local\Temp\tmp43hezr9g\testfile.c -pipe -c -o C:\Users\fgsj\AppData\Local\Temp\tmp43hezr9g\output.obj -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/
+programs: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/
+libraries: =C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/lib/x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../x86_64-w64-mingw32/9.1.0/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../lib/;C:/building/msys64/mingw64/x86_64-w64-mingw32/lib/x86_64-w64-mingw32/9.1.0/;C:/building/msys64/mingw64/x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../;C:/building/msys64/mingw64/x86_64-w64-mingw32/lib/
+
+Compiler stderr:
+ 

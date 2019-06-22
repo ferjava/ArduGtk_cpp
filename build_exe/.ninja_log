@@ -1,0 +1,17 @@
+# ninja log v5
+54	124	582894889	src/arduboton-resources.c	77d9dc53bfe3bf62
+80	138	582894889	src/arduboton-resources.h	7e330209ab83b369
+2	396	582894889	data/fjv.Ejercicios.ArduBoton.desktop	afb7ad95ae3fcab6
+29	487	582894889	data/fjv.Ejercicios.ArduBoton.appdata.xml	74fcca150eaa1edc
+138	581	582894889	src/25a6634@@arduboton@exe/meson-generated_.._arduboton-resources.c.obj	48529d8f5498c35d
+179	2341	582894891	src/25a6634@@arduboton@exe/main.cpp.obj	6c37f85fab3b0671
+207	2528	582894891	src/25a6634@@arduboton@exe/arduboton-window.cpp.obj	46ad1485a8c819bb
+2529	2970	582894891	src/arduboton.exe	8e2dbf0eaf22151
+11	2026	582895005	src/25a6634@@arduboton@exe/arduboton-window.cpp.obj	46ad1485a8c819bb
+2027	2429	582895005	src/arduboton.exe	8e2dbf0eaf22151
+13	2178	582900134	src/25a6634@@arduboton@exe/arduboton-window.cpp.obj	46ad1485a8c819bb
+2178	2758	582900135	src/arduboton.exe	8e2dbf0eaf22151
+12	1950	582900327	src/25a6634@@arduboton@exe/arduboton-window.cpp.obj	46ad1485a8c819bb
+1951	2256	582900327	src/arduboton.exe	8e2dbf0eaf22151
+13	1952	582900398	src/25a6634@@arduboton@exe/arduboton-window.cpp.obj	46ad1485a8c819bb
+1953	2406	582900399	src/arduboton.exe	8e2dbf0eaf22151
