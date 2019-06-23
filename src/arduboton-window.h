@@ -33,7 +33,7 @@ public:
 	ArdubotonWindow();
  virtual ~ArdubotonWindow();
   void on_boton_pressed();
-  void on_boton_conecta_clicked();    
+  void on_boton_conecta_clicked();
 private:
 	Gtk::HeaderBar *headerbar;
 	Gtk::Entry  *entry;

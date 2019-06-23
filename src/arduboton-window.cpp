@@ -56,7 +56,7 @@ ArdubotonWindow::ArdubotonWindow()
      headerbar->show();
      boton->signal_clicked().connect(sigc::mem_fun(*this, &ArdubotonWindow::on_boton_pressed));
      boton_conectar->signal_clicked().connect(sigc::mem_fun(*this,&ArdubotonWindow::on_boton_conecta_clicked));
-
+      
 	}
 	void ArdubotonWindow::on_boton_pressed()
 {
@@ -75,7 +75,7 @@ ArdubotonWindow::ArdubotonWindow()
     boton->set_label("OFF");
     sp_nonblocking_write(serialport, High ,1);
     sp_nonblocking_read(serialport,entrada,20);
-    printf("Salida de la cadena :'%s'\n",entrada);
+    printf("Salida de la cadena :'%s'\n",entrada); 
     pulsado = false;
     }
     else if(pulsado == false )

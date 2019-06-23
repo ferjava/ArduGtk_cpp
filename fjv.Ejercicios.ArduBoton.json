@@ -129,8 +129,8 @@
 
         	 "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://codeload.github.com/crayzeewulf/libserial/tar.gz/v1.0.0/libserial-1.0.0.tar.gz"
+                    "type": "git",
+                    "url": "git://sigrok.org/libserialport"
 
 
                }

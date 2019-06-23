@@ -7,11 +7,12 @@
             "type": "meson",
             "mode": "build",
             "problemMatcher": []
-        },
+        },   
         {
             "type": "meson",
             "mode": "clean",
             "problemMatcher": []
         }
+       
     ]
 }
